@@ -1,0 +1,39 @@
+<head>
+  <script type="text/javascript" src="detector.js" ></script>
+  <script type="text/javascript" src="index.js" ></script>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    label {
+      padding: 0.5em;
+      display: block;
+      font-family: Sans-Serif;
+    }
+
+    #container {
+      height: 100%;
+      width: 100%;
+      transition: background-color 0.25s;
+    }
+
+    #debug {
+      font-size: 24pt;
+      color: #fff;
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="container">
+    <div id="debug">
+      <label>pitch: <span id="pitch"></span> </label>
+      <label>raw volume: <span id="volume"></span> </label>
+      <label>treated volume: <span id="dbs"></span> </label>
+      <label>color: <span id="color"></span> </label>
+    </div>
+  </div>
+</body>
