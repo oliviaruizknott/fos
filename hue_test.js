@@ -1,12 +1,12 @@
 const HUE_IP = '10.0.0.91';
 const USERNAME = 'HdGesbeu3zDR2XGZIpRw8v-AM2rSESbWzqyoxO7g';
 const LIGHT_URL = `http://${HUE_IP}/api/${USERNAME}/lights/1/state`;
-const MAX_HUE = 65280;
+const MAX_HUE = 8750;
 
 let hue;
 
 function init() {
-  setInterval(sendRequest, 100);
+  setInterval(sendRequest, 80);
   hue = 0;
 }
 
@@ -25,8 +25,8 @@ function sendRequest() {
 function lightSettings() {
   return {
     on:true,
-    sat: randomNumberBetween(100, 255),
-    bri: randomNumberBetween(10, 255),
+    sat: randomNumberBetween(235, 255),
+    bri: randomNumberBetween(150, 255),
     hue: randomNumberBetween(0, MAX_HUE)
   }
 }
